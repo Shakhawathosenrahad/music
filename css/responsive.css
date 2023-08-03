@@ -1,0 +1,25 @@
+/* navigation bar */
+
+@media (width <= 650px) {
+    nav .links {
+        position: fixed;
+        top: 0;
+        right: -650px;
+        width: 100%;
+        height: 100vh;
+        justify-content: flex-start;
+        gap: 40px;
+        flex-direction: column;
+        background: #777575;
+        z-index: 100;
+        transition: right 300ms;
+    }
+    .links .close,
+    nav .menu {
+        display: block;
+    }
+    .links .close {
+        align-self: flex-end;
+        margin-right: 55px;
+    }
+}
